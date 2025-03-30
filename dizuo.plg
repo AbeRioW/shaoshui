@@ -1,0 +1,647 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\test\dizuo.uvproj
+Project File Date:  03/30/2025
+
+<h2>Output:</h2>
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+Program Size: data=9.0 xdata=0 code=343
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 0 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+Program Size: data=9.0 xdata=0 code=48
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 1 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+Program Size: data=9.0 xdata=0 code=48
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 1 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+Program Size: data=9.0 xdata=0 code=48
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 1 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+compiling oled.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_COLORTURN?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DISPLAYTURN?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?OLED
+Program Size: data=47.0 xdata=0 code=3177
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 9 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(13): error C231: 'P0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(14): error C231: 'P1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(15): error C231: 'P2': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(16): error C231: 'P3': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(17): error C231: 'PSW': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(18): error C231: 'ACC': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(19): error C231: 'B': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(20): error C231: 'SP': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(21): error C231: 'DPL': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(22): error C231: 'DPH': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(23): error C231: 'PCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(24): error C231: 'TCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(25): error C231: 'TMOD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(26): error C231: 'TL0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(27): error C231: 'TL1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(28): error C231: 'TH0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(29): error C231: 'TH1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(30): error C231: 'IE': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(31): error C231: 'IP': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(32): error C231: 'SCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(33): error C231: 'SBUF': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(45): error C231: 'CY': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(46): error C231: 'AC': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(47): error C231: 'F0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(48): error C231: 'RS1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(49): error C231: 'RS0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(50): error C231: 'OV': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(51): error C231: 'P': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(54): error C231: 'TF1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(55): error C231: 'TR1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(56): error C231: 'TF0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(57): error C231: 'TR0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(58): error C231: 'IE1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(59): error C231: 'IT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(60): error C231: 'IE0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(61): error C231: 'IT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(64): error C231: 'EA': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(66): error C231: 'ES': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(67): error C231: 'ET1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(68): error C231: 'EX1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(69): error C231: 'ET0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(70): error C231: 'EX0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(74): error C231: 'PS': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(75): error C231: 'PT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(76): error C231: 'PX1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(77): error C231: 'PT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(78): error C231: 'PX0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(81): error C231: 'RD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(82): error C231: 'WR': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(83): error C231: 'T1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(84): error C231: 'T0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(85): error C231: 'INT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(86): error C231: 'INT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(87): error C231: 'TXD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(88): error C231: 'RXD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(91): error C231: 'SM0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(92): error C231: 'SM1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(93): error C231: 'SM2': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(94): error C231: 'REN': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(95): error C231: 'TB8': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(96): error C231: 'RB8': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(97): error C231: 'TI': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG52.H(98): error C231: 'RI': redefinition
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+compiling oled.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+compiling oled.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+compiling oled.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?DIZUO
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=45.0 xdata=0 code=3212
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+bsp\dizuo.c(2): warning C315: unknown #directive 'Include'
+BSP\DIZUO.C(17): warning C206: 'DS18B20_ReadTemp': missing function-prototype
+BSP\DIZUO.C(18): warning C206: 'sprintf': missing function-prototype
+BSP\DIZUO.C(18): error C267: 'sprintf': requires ANSI-style prototype
+compiling ds18b20.c...
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+bsp\dizuo.c(2): warning C315: unknown #directive 'Include'
+BSP\DIZUO.C(17): warning C206: 'DS18B20_ReadTemp': missing function-prototype
+BSP\DIZUO.C(18): error C214: illegal pointer conversion
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(18): error C214: illegal pointer conversion
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\output\ds18b20.obj (DS18B20)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** ERROR L118: REFERENCE MADE TO ERRONEOUS EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\output\dizuo.obj (DIZUO)
+    ADDRESS: 1575H
+Program Size: data=83.1 xdata=0 code=6077
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+compiling oled.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=83.1 xdata=0 code=6077
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 4 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=83.1 xdata=0 code=6056
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 4 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS18B20_READTEMP?DS18B20
+Program Size: data=89.2 xdata=0 code=6046
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS18B20_READTEMP?DS18B20
+Program Size: data=89.2 xdata=0 code=6046
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS18B20_READTEMP?DS18B20
+Program Size: data=89.2 xdata=0 code=6038
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=83.1 xdata=0 code=6048
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 4 Warning(s).
+Build target 'dizuo'
+compiling ds18b20.c...
+BSP\DS18B20.C(21): error C141: syntax error near 'i', expected ')'
+BSP\DS18B20.C(23): error C141: syntax error near 'j'
+BSP\DS18B20.C(23): error C202: 'j': undefined identifier
+BSP\DS18B20.C(24): error C202: 'j': undefined identifier
+BSP\DS18B20.C(25): error C202: 'k': undefined identifier
+Target not created
+Build target 'dizuo'
+compiling ds18b20.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY1?DS18B20
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?READTEMPERATURE?DS18B20
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS18B20_INIT
+    MODULE:  .\output\dizuo.obj (DIZUO)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS18B20_READTEMP
+    MODULE:  .\output\dizuo.obj (DIZUO)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\output\dizuo.obj (DIZUO)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS18B20_INIT
+    MODULE:  .\output\dizuo.obj (DIZUO)
+    ADDRESS: 1579H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS18B20_READTEMP
+    MODULE:  .\output\dizuo.obj (DIZUO)
+    ADDRESS: 157CH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\output\dizuo.obj (DIZUO)
+    ADDRESS: 15B5H
+Program Size: data=90.2 xdata=0 code=6068
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 12 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(9): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(10): warning C280: 'show': unreferenced local variable
+compiling oled.c...
+compiling ds18b20.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY1?DS18B20
+Program Size: data=75.1 xdata=0 code=3585
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 7 Warning(s).
+Build target 'dizuo'
+compiling ds18b20.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY1?DS18B20
+Program Size: data=75.1 xdata=0 code=3586
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 5 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(9): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(10): warning C280: 'show': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY1?DS18B20
+Program Size: data=75.1 xdata=0 code=3583
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 7 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(9): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(10): warning C280: 'show': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY1?DS18B20
+Program Size: data=75.1 xdata=0 code=3583
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 7 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(13): error C231: 'P0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(14): error C231: 'P1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(15): error C231: 'P2': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(16): error C231: 'P3': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(17): error C231: 'PSW': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(18): error C231: 'ACC': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(19): error C231: 'B': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(20): error C231: 'SP': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(21): error C231: 'DPL': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(22): error C231: 'DPH': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(23): error C231: 'PCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(24): error C231: 'TCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(25): error C231: 'TMOD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(26): error C231: 'TL0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(27): error C231: 'TL1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(28): error C231: 'TH0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(29): error C231: 'TH1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(30): error C231: 'IE': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(31): error C231: 'IP': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(32): error C231: 'SCON': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(33): error C231: 'SBUF': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(38): error C231: 'CY': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(39): error C231: 'AC': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(40): error C231: 'F0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(41): error C231: 'RS1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(42): error C231: 'RS0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(43): error C231: 'OV': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(44): error C231: 'P': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(47): error C231: 'TF1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(48): error C231: 'TR1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(49): error C231: 'TF0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(50): error C231: 'TR0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(51): error C231: 'IE1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(52): error C231: 'IT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(53): error C231: 'IE0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(54): error C231: 'IT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(57): error C231: 'EA': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(58): error C231: 'ES': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(59): error C231: 'ET1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(60): error C231: 'EX1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(61): error C231: 'ET0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(62): error C231: 'EX0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(65): error C231: 'PS': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(66): error C231: 'PT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(67): error C231: 'PX1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(68): error C231: 'PT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(69): error C231: 'PX0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(72): error C231: 'RD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(73): error C231: 'WR': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(74): error C231: 'T1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(75): error C231: 'T0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(76): error C231: 'INT1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(77): error C231: 'INT0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(78): error C231: 'TXD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(79): error C231: 'RXD': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(82): error C231: 'SM0': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(83): error C231: 'SM1': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(84): error C231: 'SM2': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(85): error C231: 'REN': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(86): error C231: 'TB8': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(87): error C231: 'RB8': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(88): error C231: 'TI': redefinition
+D:\PROGRAMFILES\KEIL4\C51\INC\REG51.H(89): error C231: 'RI': redefinition
+compiling ds18b20.c...
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(18): warning C206: 'ReadTemperature': missing function-prototype
+BSP\DIZUO.C(9): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(10): warning C280: 'show': unreferenced local variable
+compiling ds18b20.c...
+BSP\DS18B20.H(15): error C202: 'P2': undefined identifier
+BSP\DS18B20.C(33): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(36): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(38): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(59): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(61): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(64): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(82): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(84): error C202: 'DSPORT': undefined identifier
+BSP\DS18B20.C(87): error C202: 'DSPORT': undefined identifier
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(18): warning C206: 'ReadTemperature': missing function-prototype
+BSP\DIZUO.C(9): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(10): warning C280: 'show': unreferenced local variable
+compiling ds18b20.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWSTRING?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DS18B20NUMTEMP?DS18B20
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS18B20TOSTRING?DS18B20
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  READTEMPERATURE
+    MODULE:  .\output\dizuo.obj (DIZUO)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  READTEMPERATURE
+    MODULE:  .\output\dizuo.obj (DIZUO)
+    ADDRESS: 1241H
+Program Size: data=101.0 xdata=0 code=4852
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 12 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(23): warning C206: 'LcdDisplayStr': missing function-prototype
+BSP\DIZUO.C(23): error C267: 'LcdDisplayStr': requires ANSI-style prototype
+BSP\DIZUO.C(23): error C202: 'now_time': undefined identifier
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(23): error C202: 'now_time': undefined identifier
+Target not created
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(12): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(13): warning C280: 'show': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=83.0 xdata=0 code=4897
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 6 Warning(s).
+Build target 'dizuo'
+compiling dizuo.c...
+BSP\DIZUO.C(12): warning C280: 'temperature': unreferenced local variable
+BSP\DIZUO.C(13): warning C280: 'show': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_ON?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_DISPLAY_OFF?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_SHOWNUM?OLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWBMP?OLED
+Program Size: data=83.0 xdata=0 code=4897
+creating hex file from ".\output\dizuo"...
+".\output\dizuo" - 0 Error(s), 6 Warning(s).

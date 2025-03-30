@@ -1,0 +1,5 @@
+".\output\dizuo.obj",
+".\output\oled.obj",
+".\output\ds18b20.obj" 
+TO ".\output\dizuo" 
+PRINT(".\listing\dizuo.m51") RAMSIZE(256) 
