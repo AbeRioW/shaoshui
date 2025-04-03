@@ -16,6 +16,13 @@ sbit OLED_RES =P1^2;//RES
 sbit OLED_DC =P1^3;//DC
 sbit OLED_CS=P1^4; //CS
 
+
+sbit KEY1 = P3^3;
+sbit KEY2 = P3^4;
+sbit KEY3 = P3^5;
+sbit KEY4 = P3^6;
+sbit KEY5 = P3^7;
+
 //-----------------OLED¶Ë¿Ú¶¨Òå----------------
 
 #define OLED_SCL_Clr() OLED_SCL=0
@@ -47,7 +54,6 @@ void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 sizey);
 u32 oled_pow(u8 m,u8 n);
 void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 sizey);
 void OLED_ShowString(u8 x,u8 y,u8 *chr,u8 sizey);
-void OLED_ShowChinese(u8 x,u8 y,u8 no,u8 sizey);
 void OLED_DrawBMP(u8 x,u8 y,u8 sizex, u8 sizey,u8 BMP[]);
 void OLED_Init(void);
 

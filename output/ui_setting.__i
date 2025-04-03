@@ -1,0 +1,1 @@
+"bsp\ui_setting.c" BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRINT(.\listing\ui_setting.lst) OBJECT(.\output\ui_setting.obj)

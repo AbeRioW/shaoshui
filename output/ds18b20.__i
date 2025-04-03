@@ -1,1 +1,0 @@
-"bsp\ds18b20.c" BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRINT(.\listing\ds18b20.lst) OBJECT(.\output\ds18b20.obj)

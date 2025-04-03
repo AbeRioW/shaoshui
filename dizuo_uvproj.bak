@@ -366,11 +366,6 @@
               <FileType>1</FileType>
               <FilePath>.\bsp\ds3231.c</FilePath>
             </File>
-            <File>
-              <FileName>ui_setting.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\bsp\ui_setting.c</FilePath>
-            </File>
           </Files>
         </Group>
       </Groups>
