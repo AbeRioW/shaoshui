@@ -122,7 +122,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>71</LineNumber>
+          <LineNumber>45</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -130,7 +130,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>ui_setting.c</Filename>
+          <Filename>dizuo.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -222,10 +222,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>31</ColumnNumber>
+      <ColumnNumber>74</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>24</TopLine>
-      <CurrentLine>33</CurrentLine>
+      <TopLine>49</TopLine>
+      <CurrentLine>49</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\dizuo.c</PathWithFileName>
       <FilenameWithoutPath>dizuo.c</FilenameWithoutPath>
@@ -238,8 +238,8 @@
       <Focus>0</Focus>
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <TopLine>79</TopLine>
+      <CurrentLine>79</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\oled.c</PathWithFileName>
       <FilenameWithoutPath>oled.c</FilenameWithoutPath>
@@ -250,10 +250,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>151</TopLine>
+      <CurrentLine>151</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\ds18b20.c</PathWithFileName>
       <FilenameWithoutPath>ds18b20.c</FilenameWithoutPath>
@@ -264,107 +264,15 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>115</TopLine>
-      <CurrentLine>140</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\bsp\ds3231.c</PathWithFileName>
-      <FilenameWithoutPath>ds3231.c</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>9</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>39</TopLine>
-      <CurrentLine>50</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\ui_setting.c</PathWithFileName>
       <FilenameWithoutPath>ui_setting.c</FilenameWithoutPath>
     </File>
   </Group>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Users\dell\Desktop\test\shaoshui\bsp\ds3231.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>23</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Users\dell\Desktop\test\shaoshui\bsp\oled.h</PathWithFilename>
-    <TopLine>32</TopLine>
-    <CurrentLine>55</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Users\dell\Desktop\test\shaoshui\bsp\ui_setting.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>7</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
 
   <WinLayout>
     <sActiveDebugView>Default</sActiveDebugView>
@@ -1711,45 +1619,9 @@
       <Documents>
         <Doc>
           <Name>.\bsp\dizuo.c</Name>
-          <ColumnNumber>31</ColumnNumber>
-          <TopLine>24</TopLine>
-          <CurrentLine>33</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\bsp\ds3231.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>115</TopLine>
-          <CurrentLine>140</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\bsp\oled.c</Name>
-          <ColumnNumber>5</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>14</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>BSP\DS3231.H</Name>
-          <ColumnNumber>37</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>23</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>BSP\OLED.H</Name>
-          <ColumnNumber>17</ColumnNumber>
-          <TopLine>32</TopLine>
-          <CurrentLine>55</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\bsp\ui_setting.c</Name>
-          <ColumnNumber>9</ColumnNumber>
-          <TopLine>39</TopLine>
-          <CurrentLine>50</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>BSP\UI_SETTING.H</Name>
-          <ColumnNumber>18</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>7</CurrentLine>
+          <ColumnNumber>74</ColumnNumber>
+          <TopLine>49</TopLine>
+          <CurrentLine>49</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

@@ -3,10 +3,12 @@
 
 #include "reg52.h"
 #include "oled.h"
-#include "ds3231.h"
 #include "stdio.h"
 
+extern int cur_temp;
+extern int is_down;
+extern int dangwei;
+
 void ui_setting(void);
-//void ui_set_date(void);
 
 #endif

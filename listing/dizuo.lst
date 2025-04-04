@@ -1,10 +1,10 @@
-C51 COMPILER V9.01   DIZUO                                                                 04/03/2025 17:18:32 PAGE 1   
+C51 COMPILER V9.01   DIZUO                                                                 04/04/2025 14:02:08 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE DIZUO
 OBJECT MODULE PLACED IN .\output\dizuo.obj
-COMPILER INVOKED BY: C:\Program Files\KEIL4\C51\BIN\C51.EXE bsp\dizuo.c BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRINT(.\
-                    -listing\dizuo.lst) OBJECT(.\output\dizuo.obj)
+COMPILER INVOKED BY: D:\ProgramFiles\KEIL4\C51\BIN\C51.EXE bsp\dizuo.c BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRINT(.\l
+                    -isting\dizuo.lst) OBJECT(.\output\dizuo.obj)
 
 line level    source
 
@@ -19,115 +19,166 @@ line level    source
    9          unsigned int count;                         //1000 times counter
   10          int time_come=0;
   11          
-  12          sbit P00 = P0^0;          //LAY
-  13          void UART_Init(void);      //11.0592MHz,波特率为9600
-  14          void timer0_init(void);
+  12          int shao_shui=0;
+  13          sbit P00 = P0^0;          //LAY
+  14          void UART_Init(void);      //11.0592MHz,波特率为9600
   15          
-  16          void main()
-  17          {
-  18   1      
-  19   1              uchar *now_temp="Not ready";  //字符模式当前温度
-  20   1              float num_temp;    //数值模式当前温度
-  21   1              float temperature;
-  22   1      
-  23   1              UART_Init();
-  24   1              timer0_init();
-  25   1      
-  26   1          OLED_Init();//初始化OLED
-  27   1              OLED_ColorTurn(0);//0正常显示，1 反色显示
-  28   1              OLED_DisplayTurn(0);//0正常显示 1 屏幕翻转显示
-  29   1      
-  30   1          DS3231_Write(0x00, 0x00);  // 设置秒
-  31   1          DS3231_Write(0x01, 0x30);  // 设置分钟
-  32   1          DS3231_Write(0x02, 0x12);  // 设置小时
-  33   1      
-  34   1              DS3231_Write(0x03, 0x03);  // 设置week
-  35   1              DS3231_Write(0x04, 0x19);  // 设置日
-  36   1              DS3231_Write(0x05, 0x0a);  // 设置月
-  37   1              DS3231_Write(0x06, 0x00);  // 设置年
-  38   1      
-  39   1      //      ui_set_date();
-  40   1      
-  41   1          while (1)
-  42   1          {
-  43   2                      if(time_come)
-  44   2                      {
-  45   3                              time_come = 0;
-  46   3                              show_date();
-  47   3                              show_time();
-  48   3      
-  49   3                              num_temp=DS18B20NumTemp();
-  50   3                              now_temp=DS18B20toString(num_temp);        
-  51   3                              OLED_ShowString(0,1,now_temp,8);                        //这里的Y是指一个字符的其实,不是像素点的起始
+  16          int i_count =0;
+  17          void ui_main(void)
+  18          {
+  19   1          int highest_tmp=0;
+  20   1              uchar *now_temp="Not ready";  //字符模式当前温度
+  21   1              float num_temp;    //数值模式当前温度
+  22   1              P00=1;
+  23   1              while(1)
+  24   1              {
+  25   2                  if(dangwei==0)
+  26   2                      {
+  27   3                              highest_tmp=30;
+  28   3                      }
+  29   2                      if(dangwei==1)
+  30   2                      {
+  31   3                              highest_tmp=70; 
+  32   3                      }
+  33   2                      if(dangwei==2)
+  34   2                      {
+  35   3                              highest_tmp=90; 
+  36   3                      }
+  37   2      
+  38   2      
+  39   2                      OLED_ShowString(20,0,"Boiling water",8);                        //这里的Y是指一个字符的其实,不是像素点的起始
+  40   2                      num_temp=DS18B20NumTemp();
+  41   2                      now_temp=DS18B20toString(num_temp);        
+  42   2                      OLED_ShowString(0,2,now_temp,8);                        //这里的Y是指一个字符的其实,不是像素点的起始
+  43   2      
+  44   2                      if(shao_shui&&num_temp<cur_temp)
+  45   2                      {
+  46   3                              P00=0;  
+  47   3                      }
+  48   2      
+  49   2                      if(num_temp>highest_tmp)
+  50   2                      {
+  51   3                              P00=1;
   52   3                      }
-  53   2      
-  54   2      //              if(KEY3==0)
-C51 COMPILER V9.01   DIZUO                                                                 04/03/2025 17:18:32 PAGE 2   
+  53   2                      if(KEY3==0)
+  54   2                      {
+C51 COMPILER V9.01   DIZUO                                                                 04/04/2025 14:02:08 PAGE 2   
 
-  55   2      //              {
-  56   2      //                      delay_ms(2);
-  57   2      //                      if(KEY3==0)
-  58   2      //                      {
-  59   2      //                              OLED_Clear();
-  60   2      //                              ui_setting();   
-  61   2      //                      }
-  62   2      //              }
-  63   2          }
-  64   1      }
-*** WARNING C280 IN LINE 21 OF BSP\DIZUO.C: 'temperature': unreferenced local variable
-  65          
-  66          
-  67          void UART_Init(void)       //11.0592MHz,波特率为9600
-  68          {
-  69   1          SCON  = 0x50;                // SCON: 模式 1, 8-bit UART, 使能接收
-  70   1          TMOD |= 0x20;               // TMOD: timer 1, mode 2, 8-bit 重装
-  71   1          TH1   = 0xFD;               // TH1:  重装值 9600 波特率 晶振 11.0592MHz
-  72   1          TL1 = TH1;
-  73   1          TR1   = 1;                  // TR1:  timer 1 打开
-  74   1          EA    = 1;                  //打开总中断
-  75   1          ES    = 0;                  //先关闭串口中断
-  76   1              TI    =1;
-  77   1      }
-  78          
-  79          
-  80          //定时器相关
-  81          void timer0_init(void)
-  82          {
-  83   1              TMOD |= 0x01;                    //set timer0 as mode1 (16-bit)
-  84   1          TL0 = T1MS;                     //initial timer0 low byte
-  85   1          TH0 = T1MS >> 8;                //initial timer0 high byte
-  86   1          TR0 = 1;                        //timer0 start running
-  87   1          ET0 = 1;                        //enable timer0 interrupt
-  88   1          EA = 1;                         //open global interrupt switch
-  89   1          count = 0;                      //initial counter
-  90   1      }
-  91          
-  92          
-  93          /* Timer0 interrupt routine */
-  94          void tm0_isr() interrupt 1
+  55   3                              delay_ms(2);
+  56   3                              if(KEY3==0)
+  57   3                              {
+  58   4                                      P00=~P00;
+  59   4                                      shao_shui=!shao_shui;
+  60   4                                      if(!shao_shui)
+  61   4                                      {
+  62   5                                              i_count =0;
+  63   5                                      }
+  64   4                              }       
+  65   3                      }
+  66   2      
+  67   2                      if(KEY2==0)
+  68   2                      {
+  69   3                              delay_ms(2);
+  70   3                              if(KEY2==0)
+  71   3                              {
+  72   4                                      OLED_Clear();
+  73   4                                      break;
+  74   4                                              
+  75   4                              }
+  76   3                      }
+  77   2      
+  78   2                      if((is_down==1)&&shao_shui)
+  79   2                      {
+  80   3                              i_count++;
+  81   3                      }
+  82   2      
+  83   2                      if(i_count==300)
+  84   2                      {
+  85   3                              i_count=0;
+  86   3                              shao_shui=0;
+  87   3                              P00=1;
+  88   3      
+  89   3                      }
+  90   2              }
+  91   1      
+  92   1      }
+  93          
+  94          void main()
   95          {
-  96   1          TL0 = T1MS;                     //reload timer0 low byte
-  97   1          TH0 = T1MS >> 8;                //reload timer0 high byte
-  98   1          if (count-- == 0)               //1ms * 1000 -> 1s
-  99   1          {
- 100   2              count = 1000;               //reset counter
- 101   2                       time_come = 1;
- 102   2                       
- 103   2          }
- 104   1      
- 105   1      }
+  96   1      
+  97   1      
+  98   1              float temperature;
+  99   1      
+ 100   1      //      UART_Init();
+ 101   1      //      timer0_init();
+ 102   1      
+ 103   1          OLED_Init();//初始化OLED
+ 104   1              OLED_ColorTurn(0);//0正常显示，1 反色显示
+ 105   1              OLED_DisplayTurn(0);//0正常显示 1 屏幕翻转显示
+ 106   1      
+ 107   1              P00=1;
+ 108   1          while (1)
+ 109   1          {
+ 110   2      
+ 111   2                        ui_main();
+ 112   2                        ui_setting();
+ 113   2      
+ 114   2          }
+ 115   1      }
+*** WARNING C280 IN LINE 98 OF BSP\DIZUO.C: 'temperature': unreferenced local variable
+C51 COMPILER V9.01   DIZUO                                                                 04/04/2025 14:02:08 PAGE 3   
+
+ 116          
+ 117          
+ 118          //void UART_Init(void)     //11.0592MHz,波特率为9600
+ 119          //{
+ 120          //    SCON  = 0x50;                // SCON: 模式 1, 8-bit UART, 使能接收
+ 121          //    TMOD |= 0x20;               // TMOD: timer 1, mode 2, 8-bit 重装
+ 122          //    TH1   = 0xFD;               // TH1:  重装值 9600 波特率 晶振 11.0592MHz
+ 123          //    TL1 = TH1;
+ 124          //    TR1   = 1;                  // TR1:  timer 1 打开
+ 125          //    EA    = 1;                  //打开总中断
+ 126          //    ES    = 0;                  //先关闭串口中断
+ 127          //      TI    =1;
+ 128          //}
+ 129          //
+ 130          //
+ 131          ////定时器相关
+ 132          //void timer0_init(void)
+ 133          //{
+ 134          //      TMOD |= 0x01;                    //set timer0 as mode1 (16-bit)
+ 135          //    TL0 = T1MS;                     //initial timer0 low byte
+ 136          //    TH0 = T1MS >> 8;                //initial timer0 high byte
+ 137          //    TR0 = 1;                        //timer0 start running
+ 138          //    ET0 = 1;                        //enable timer0 interrupt
+ 139          //    EA = 1;                         //open global interrupt switch
+ 140          //    count = 0;                      //initial counter
+ 141          //}
+ 142          //
+ 143          //
+ 144          ///* Timer0 interrupt routine */
+ 145          //void tm0_isr() interrupt 1
+ 146          //{
+ 147          //    TL0 = T1MS;                     //reload timer0 low byte
+ 148          //    TH0 = T1MS >> 8;                //reload timer0 high byte
+ 149          //    if (count-- == 0)               //1ms * 1000 -> 1s
+ 150          //    {
+ 151          //        count = 1000;               //reset counter
+ 152          //               time_come = 1;
+ 153          //               
+ 154          //    }
+ 155          //
+ 156          //}
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    213    ----
-   CONSTANT SIZE    =     10    ----
+   CODE SIZE        =    284    ----
+   CONSTANT SIZE    =     24    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      4      11
+   DATA SIZE        =      8      13
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
-C51 COMPILER V9.01   DIZUO                                                                 04/03/2025 17:18:32 PAGE 3   
-
 END OF MODULE INFORMATION.
 
 

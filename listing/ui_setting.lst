@@ -1,164 +1,146 @@
-C51 COMPILER V9.01   UI_SETTING                                                            04/03/2025 17:08:37 PAGE 1   
+C51 COMPILER V9.01   UI_SETTING                                                            04/04/2025 14:03:54 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE UI_SETTING
 OBJECT MODULE PLACED IN .\output\ui_setting.obj
-COMPILER INVOKED BY: C:\Program Files\KEIL4\C51\BIN\C51.EXE bsp\ui_setting.c BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRI
-                    -NT(.\listing\ui_setting.lst) OBJECT(.\output\ui_setting.obj)
+COMPILER INVOKED BY: D:\ProgramFiles\KEIL4\C51\BIN\C51.EXE bsp\ui_setting.c BROWSE INCDIR(.\bsp) DEBUG OBJECTEXTEND PRIN
+                    -T(.\listing\ui_setting.lst) OBJECT(.\output\ui_setting.obj)
 
 line level    source
 
    1          #include "ui_setting.h"
    2          
-   3          void ui_setting(void)
-   4          {
-   5   1          int position = 0;
-   6   1      
-   7   1              while(1)
-   8   1              {
-   9   2                      OLED_ShowString(20,0,position==0?">1.Gear adjustment":" 1.Gear adjustment",8); 
-  10   2                      OLED_ShowString(20,1,position==1?">2.Date Setting":" 2.Date Setting",8); 
-  11   2                              if(KEY4==0)
-  12   2                              {
-  13   3                                      delay_ms(2);
-  14   3                                      if(KEY4==0)
-  15   3                                      {
-  16   4                                              position--;
-  17   4                                              if(position<0)
-  18   4                                              {
-  19   5                                                      position=1;
-  20   5                                              }
-  21   4                                      }
-  22   3                              }
-  23   2      
-  24   2                              if(KEY5==0)
-  25   2                              {
-  26   3                                      delay_ms(2);
-  27   3                                      if(KEY5==0)
-  28   3                                      {
-  29   4                                              position++;
-  30   4                                              if(position>1)
-  31   4                                              {
-  32   5                                                      position=0;
-  33   5                                              }
-  34   4                                      }
-  35   3                              }
-  36   2      
-  37   2      
-  38   2                              if(KEY3==0)
-  39   2                              {
-  40   3                                      delay_ms(2);
-  41   3                                      if(KEY3==0)
-  42   3                                      {
-  43   4                                              switch(position)
-  44   4                                              {
-  45   5                                                      case 0:
-  46   5                                                              
-  47   5                                                      break;
-  48   5                                                      case 1:
-  49   5                                                              OLED_Clear();
-  50   5                                                              //ui_set_date();
-  51   5                                                      break;
-  52   5                                              }
-  53   4                                      }
-  54   3                              }
-C51 COMPILER V9.01   UI_SETTING                                                            04/03/2025 17:08:37 PAGE 2   
+   3          int cur_temp=27;
+   4          int is_down=0;
+   5          int dangwei = 0;
+   6          
+   7          void ui_setting(void)
+   8          {
+   9   1                int position=0;
+  10   1                char show_temp[20]={0},char_down[20]={0};
+  11   1                OLED_ShowString(40,0,"Setting",8);
+  12   1                while(1)
+  13   1                {
+  14   2                      
+  15   2                       if(position<3)
+  16   2                       {
+  17   3                              dangwei =position;
+  18   3                       }
+  19   2                       OLED_ShowString(0,1,position==0?">gear 1":" gear 1",8);                //30du
+  20   2                       OLED_ShowString(0,2,position==1?">gear 2":" gear 2",8);            //70du                 
+  21   2                       OLED_ShowString(0,3,position==2?">gear 3":" gear 3",8);                //100du 
+  22   2      
+  23   2                       if(position==3)
+  24   2                       {
+  25   3                              sprintf(show_temp,">const temp:%d",cur_temp);                   
+  26   3                       }
+  27   2                       else
+  28   2                       {
+  29   3                              sprintf(show_temp," const temp:%d",cur_temp);
+  30   3                       }  
+  31   2                       OLED_ShowString(0,4,show_temp,8);
+  32   2      
+  33   2      
+  34   2                      if(position==4)
+  35   2                      {
+  36   3                               (is_down==0)?OLED_ShowString(0,5,">timed shutdown: NO",8):OLED_ShowString(0,5,">timed shutdown:YES",8)
+             -;
+  37   3                      }
+  38   2                      else
+  39   2                      {
+  40   3                                (is_down==0)?OLED_ShowString(0,5," timed shutdown: NO",8):OLED_ShowString(0,5," timed shutdown:YES",8
+             -);
+  41   3                      }
+  42   2      
+  43   2                       if(KEY5==0)
+  44   2                       {
+  45   3                              delay_ms(2);
+  46   3                              if(KEY5==0)
+  47   3                              {
+  48   4                                      position++;
+  49   4                                      if(position==5)
+  50   4                                      {
+  51   5                                         position=4;
+  52   5                                      }       
+C51 COMPILER V9.01   UI_SETTING                                                            04/04/2025 14:03:54 PAGE 2   
 
+  53   4                              }
+  54   3                       }
   55   2      
-  56   2                              //KEY1被按下,返回键
-  57   2                              if(KEY1==0)
-  58   2                              {
-  59   3                                      delay_ms(2);
-  60   3                                      if(KEY1==0)
-  61   3                                      {
-  62   4                                          OLED_Clear();
-  63   4                                              return;
-  64   4                                      }                               
-  65   3                              }                       
-  66   2              }
-  67   1      }
-  68          
-  69          
-  70          //void ui_set_date(void)
-  71          //{
-  72          //    int position=0;
-  73          //    unsigned int hour_i,minute_i,second_i;
-  74          //    unsigned char second_c,minute_c,hour_c;
-  75          //
-  76          //      unsigned int date_i,month_i,year_i;
-  77          //    unsigned char date_c,month_c,year_c;
-  78          //
-  79          //      char show_data1[15],show_data2[15];
-  80          //
-  81          //
-  82          //      OLED_ShowString(20,0,"Date Set",8);
-  83          //      second_c  = DS3231_Read(0x00);                          //获取秒
-  84          //    minute_c  = DS3231_Read(0x01);                    //获取分
-  85          //    hour_c    = DS3231_Read(0x02);            //获取时 
-  86          //
-  87          //       hour_i =        ((hour_c&0x7f)>>4)*10+   hour_c&0x0f;
-  88          //       minute_i =  ((minute_c&0x7f)>>4)*10+ minute_c&0x0f;
-  89          //       second_i =  ((second_c&0x7f)>>4)*10+ second_c&0x0f;
-  90          //
-  91          //       date_c = DS3231_Read(0x04);            //获取日
-  92          //     month_c = DS3231_Read(0x05);                     //获取月
-  93          //     year_c = DS3231_Read(0x06);                      //获取年
-  94          //
-  95          //       year_i =        ((year_c&0x7f)>>4)*10+ year_c&0x0f;
-  96          //       month_i =       ((month_c&0x7f)>>4)*10+ month_c&0x0f;
-  97          //       date_i =        ((date_c&0x7f)>>4)*10+ date_c&0x0f;
-  98          //
-  99          //      while(1)
- 100          //      {
- 101          //          sprintf(show_data1,"20%02d-%02d-%02d   ",year_i,month_i,date_i);    
- 102          //              sprintf(show_data2,"%02d:%02d:%02d   ",hour_i,minute_i,second_i);
- 103          //              OLED_ShowString(0,1,show_data1,8);
- 104          //              OLED_ShowString(0,2,show_data2,8);
- 105          //
- 106          //              if(KEY3==0)
- 107          //              {
- 108          //                      delay_ms(2);
- 109          //                      if(KEY3==0)
- 110          //                      {
- 111          //                              position++;
- 112          //                              if(position>5)
- 113          //                                      position=0;     
- 114          //                      }
- 115          //              }
- 116          //
-C51 COMPILER V9.01   UI_SETTING                                                            04/03/2025 17:08:37 PAGE 3   
+  56   2                      if(KEY4==0)
+  57   2                       {
+  58   3                              delay_ms(2);
+  59   3                              if(KEY4==0)
+  60   3                              {
+  61   4                                      position--;
+  62   4                                      if(position<0)
+  63   4                                      {
+  64   5                                         position=0;
+  65   5                                      }       
+  66   4                              }
+  67   3                       }
+  68   2      
+  69   2                       if(KEY1==0)
+  70   2                       {
+  71   3                              delay_ms(2);
+  72   3                              if(KEY1==0)
+  73   3                              {
+  74   4                                      switch(position)
+  75   4                                      {
+  76   5                                              case 3:
+  77   5                                                      cur_temp--;
+  78   5                                                      if(cur_temp<0)
+  79   5                                                              cur_temp=0;     
+  80   5                                              break;
+  81   5                                              case 4:
+  82   5                                                      is_down=0;
+  83   5                                              break;
+  84   5                                      }
+  85   4                              }                       
+  86   3                       }
+  87   2      
+  88   2      
+  89   2                       
+  90   2                       if(KEY2==0)
+  91   2                       {
+  92   3                              delay_ms(2);
+  93   3                              if(KEY2==0)
+  94   3                              {
+  95   4                                      switch(position)
+  96   4                                      {
+  97   5                                              case 3:
+  98   5                                                      cur_temp++;
+  99   5                                                      if(cur_temp>90)
+ 100   5                                                              cur_temp=90;    
+ 101   5                                              break;
+ 102   5                                              case 4:
+ 103   5                                                      is_down=1;
+ 104   5                                              break;
+ 105   5                                      }
+ 106   4                              }                       
+ 107   3                       }
+ 108   2      
+ 109   2                       if(KEY3==0)
+ 110   2                       {
+ 111   3                              delay_ms(2);
+ 112   3                              if(KEY3==0)
+ 113   3                              {
+ 114   4                                      OLED_Clear();
+C51 COMPILER V9.01   UI_SETTING                                                            04/04/2025 14:03:54 PAGE 3   
 
- 117          //              if(KEY4==0)
- 118          //              {
- 119          //                      delay_ms(2);
- 120          //                      if(KEY4==0)
- 121          //                      {
- 122          //                              switch(position)
- 123          //                              {
- 124          //                                      case 0:
- 125          //                                         year_c--;
- 126          //                                         if(year_c<0)
- 127          //                                         {
- 128          //                                                      year_c = 0x63;  
- 129          //                                         } 
- 130          //                                      break;
- 131          //                                      case 1:
- 132          //                                              month_c--;
- 133          ////                                            month_c =       
- 134          //                                      break;
- 135          //                              }
- 136          //                      }
- 137          //              }
- 138          //      }       
- 139          //}
+ 115   4                                      break;  
+ 116   4                              }
+ 117   3                       }
+ 118   2                }                     
+ 119   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    184    ----
-   CONSTANT SIZE    =     70    ----
+   CODE SIZE        =    506    ----
+   CONSTANT SIZE    =    206    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----       2
+   DATA SIZE        =      6      42
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

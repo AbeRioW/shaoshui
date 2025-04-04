@@ -122,6 +122,21 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+          <LineNumber>45</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>dizuo.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
           <LineNumber>4</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
@@ -135,7 +150,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>1</Number>
+          <Number>2</Number>
           <Type>0</Type>
           <LineNumber>13</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -150,7 +165,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>3</Number>
           <Type>0</Type>
           <LineNumber>20</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -207,10 +222,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>17</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>39</TopLine>
-      <CurrentLine>51</CurrentLine>
+      <TopLine>79</TopLine>
+      <CurrentLine>79</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\dizuo.c</PathWithFileName>
       <FilenameWithoutPath>dizuo.c</FilenameWithoutPath>
@@ -221,10 +236,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>17</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>133</TopLine>
-      <CurrentLine>149</CurrentLine>
+      <TopLine>79</TopLine>
+      <CurrentLine>79</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\oled.c</PathWithFileName>
       <FilenameWithoutPath>oled.c</FilenameWithoutPath>
@@ -235,10 +250,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>151</TopLine>
+      <CurrentLine>151</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\ds18b20.c</PathWithFileName>
       <FilenameWithoutPath>ds18b20.c</FilenameWithoutPath>
@@ -249,13 +264,13 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>76</ColumnNumber>
+      <ColumnNumber>64</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>94</TopLine>
-      <CurrentLine>99</CurrentLine>
+      <TopLine>82</TopLine>
+      <CurrentLine>82</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\bsp\ds3231.c</PathWithFileName>
-      <FilenameWithoutPath>ds3231.c</FilenameWithoutPath>
+      <PathWithFileName>.\bsp\ui_setting.c</PathWithFileName>
+      <FilenameWithoutPath>ui_setting.c</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -1594,5 +1609,22 @@
       </Window>
     </View>
   </WinLayout>
+
+  <MDIGroups>
+    <Orientation>1</Orientation>
+    <ActiveMDIGroup>0</ActiveMDIGroup>
+    <MDIGroup>
+      <Size>100</Size>
+      <ActiveTab>0</ActiveTab>
+      <Documents>
+        <Doc>
+          <Name>.\bsp\dizuo.c</Name>
+          <ColumnNumber>17</ColumnNumber>
+          <TopLine>79</TopLine>
+          <CurrentLine>79</CurrentLine>
+        </Doc>
+      </Documents>
+    </MDIGroup>
+  </MDIGroups>
 
 </ProjectOpt>
